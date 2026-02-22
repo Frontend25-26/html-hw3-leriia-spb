@@ -1,6 +1,153 @@
 body {
+    background: #f8f9fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
+}
 
-    background: #292929;
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.8em;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 7px;
+    color: #2d3748;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 0.95em;
+    transition: color 0.2s;
+    width: 100%;
+}
+
+input[value="correct"]:checked + span {
+    color: #27ae60;
+    font-weight: 500;
+}
+
+input[value="wrong"]:checked + span {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.hint-details {
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #555;
+}
+
+.hint-details summary {
+    cursor: pointer;
+    color: #3498db;
+    font-weight: 500;
+}
+
+.hint-details p {
+    margin: 4px 0;
+    padding: 6px 10px;
+    background: #f1f8ff;
+    border-left: 3px solid #3498db;
+    font-style: italic;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    vertical-align: middle;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.color-picker {
+    margin: 8px 0;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.text-input,
+.date-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #cbd5e0;
+    border-radius: 4px;
+    background: #f8fafc;
+}
+
+.text-input:focus,
+.date-input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: white;
+}
+
+.results summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #3498db;
+    padding: 10px 14px;
+    background: #eef5fd;
+    border: 1px solid #c5d9f1;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+.results summary:hover {
+    background: #d9e8fb;
+}
+
+.feedback {
+    margin-top: 12px;
+    padding: 12px;
+    background: #f8fdff;
+    border: 1px solid #bee3f8;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #4a5568;
+}
+
+.feedback p {
+    margin-bottom: 8px;
+}
+
+.feedback code {
+    background: #f1f5f9;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #2d3748;
 }
