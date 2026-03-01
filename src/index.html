@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>HW3</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Квиз по HTML</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div id="app">
-        
-    </div>
+<div class="container">
+    <h1>Квиз: История и основы HTML</h1>
+
+    <form>
+        <div class="card">
+            <h3>1. Кто является создателем HTML?</h3>
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                <span>Билл Гейтс</span>
+            </label>
+            <label>
+                <input type="radio" name="q1" value="correct">
+                <span>Тим Бернерс-Ли</span>
+            </label>
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                <span>Стив Джобс</span>
+            </label>
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                <span>Линус Торвальдс</span>
+            </label>
+        </div>
+
+        <div class="card">
+            <h3>2. В каком году был опубликован первый документ по HTML?</h3>
+            <label>
+                <input type="radio" name="q2" value="wrong">
+                <span>1989</span>
+            </label>
+            <label>
+                <input type="radio" name="q2" value="correct">
+                <span>1991</span>
+            </label>
+            <label>
+                <input type="radio" name="q2" value="wrong">
+                <span>1995</span>
+            </label>
+            <label>
+                <input type="radio" name="q2" value="wrong">
+                <span>2000</span>
+            </label>
+        </div>
+
+        <div class="card">
+            <h3>3. Какие теги существовали ещё в HTML 2.0? (выберите все верные)</h3>
+            <label>
+                <input type="checkbox" value="correct">
+                <span>&lt;p&gt;</span>
+            </label>
+            <label>
+                <input type="checkbox" value="correct">
+                <span>&lt;a&gt;</span>
+            </label>
+            <label>
+                <input type="checkbox" value="correct">
+                <span>&lt;img&gt;</span>
+            </label>
+            <label>
+                <input type="checkbox" value="wrong">
+                <span>&lt;section&gt;</span>
+            </label>
+        </div>
+
+        <div class="card">
+            <h3>4. Как назывался первый веб-браузер, созданный Тимом Бернерс-Ли?</h3>
+            <input type="text" name="q4" placeholder="Введите название" class="text-input"/>
+            <details class="hint-details">
+                <summary>Подсказка</summary>
+                <p>Начинается на "W", означает "навигатор"</p>
+            </details>
+        </div>
+
+        <div class="card">
+            <h3>5. Угадай цвет, совпадающий с образцом</h3>
+            <p><strong>Образец цвета:</strong> <span class="color-sample" style="background: #adefcb;"></span></p>
+            <input type="color" name="q5" value="#000000" class="color-picker"/>
+            <details class="hint-details">
+                <summary>Подсказка</summary>
+                <p>Перемещай ползунки в палитре, чтобы повторить цвет из образца.</p>
+            </details>
+        </div>
+
+        <div class="card">
+            <h3>6. Когда HTML5 был официально стандартизирован?</h3>
+            <input type="date" name="q6" class="date-input"/>
+            <details class="hint-details">
+                <summary>Подсказка</summary>
+                <p>28 октября</p>
+            </details>
+        </div>
+    </form>
+
+    <details class="results">
+        <summary>Правильные ответы с пояснениями</summary>
+        <div class="feedback">
+            <p><strong>Вопрос 1:</strong> HTML создал <strong>Тим Бернерс-Ли</strong> в ЦЕРНе в начале 1990-х.</p>
+            <p><strong>Вопрос 2:</strong> Первое описание HTML было опубликовано в <strong>1991 году</strong> на статусной странице CERN.</p>
+            <p><strong>Вопрос 3:</strong> &lt;p&gt;, &lt;a&gt;, &lt;img&gt; — базовые теги с HTML 2.0. &lt;section&gt; появился только в HTML5.</p>
+            <p><strong>Вопрос 4:</strong> WorldWideWeb.</p>
+            <p><strong>Вопрос 5:</strong> Цвет <code>#adefcb</code> — это rgb(173, 239, 203), пастельный оттенок мятно-зелёного цвета. Если ты нашёл его в палитре — тоже хорошо!</p>
+            <p><strong>Вопрос 6:</strong> HTML5 стал официальным стандартом <strong>28 октября 2014 года</strong>.</p>
+        </div>
+    </details>
+</div>
 </body>
 </html>
